@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react'; 
 import { connect } from 'react-redux'; 
 import { fetchUser } from '../actions'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaInstagram } from 'react-icons/fa'
 
 import Spinner from './Spinner'; 
 import { FaSearch } from 'react-icons/fa';
@@ -34,7 +34,7 @@ class Search extends Component {
         <Fragment>
             
           <form onSubmit={this.handleSubmit} className="MainSearch">
-            <h1 className="MainSearch__Title text-muted text-center"><FontAwesomeIcon icon="instagram" /> Instagram <br/>Engagement Rate Checker</h1>
+            <h1 className="MainSearch__Title text-muted text-center"><FaInstagram/> Instagram <br/>Engagement Rate Checker</h1>
             <div className="MainSearch__Bar">   
               <FaSearch className="MainSearch__Bar__icon"/>     
               <input 
