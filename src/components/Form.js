@@ -20,7 +20,7 @@ class Form extends Component {
     return (
       <form onSubmit={this.handleSubmit} className="rounded-lg px-3 py-2 Dashboard__form">
         <FaInstagram className="Dashboard__form__logo" style={{ fontSize: '1.5rem' }} />
-        <input onChange={this.handleChange} type="text" value={this.state.value} className="Dashboard__input form-control" placeholder="Search instagram" />
+        <input onChange={this.handleChange} type="text" value={this.state.value} className="Dashboard__input form-control" placeholder="Enter instagram username" />
       </form>
     )
   }
