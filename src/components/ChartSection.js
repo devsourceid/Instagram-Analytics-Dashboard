@@ -16,16 +16,7 @@ const ChartSection = ({
         (
           <Fragment>
             <div className="row">
-              <div className="col-md-6 col-xl-4">
-                <Card
-                  title="Estimated earnings per post"
-                  data={`$${numFormatter(currCostPerPost)}`}
-                  rate={getRateDiff(currCostPerPost, prevCostPerPost)}
-                  icon={<FaDollarSign style={{ color: '#c73aa9' }} />}
-                  wrapperColor='#f9e1f2'
-                />
-              </div>
-              <div className="col-md-6 col-xl-4 mt-4 mt-md-0">
+              <div className="col-md-4 col-xl-4 mt-4 mt-md-0">
                 <Card
                   title="Engagement Rate"
                   data={`${currEngagementRate.toFixed(2)}%`}
@@ -34,7 +25,7 @@ const ChartSection = ({
                   wrapperColor='#fff6da'
                 />
               </div>
-              <div className="col-md-6 col-xl-4 mt-4 mt-xl-0">
+              <div className="col-md-4 col-xl-4 mt-4 mt-md-0">
                 <Card
                   title="Average Likes"
                   data={numFormatter(currAverageLikes)}
@@ -43,7 +34,7 @@ const ChartSection = ({
                   wrapperColor='#fddfdf'
                 />
               </div>
-              <div className="col-md-6 col-xl-4 mt-4">
+              <div className="col-md-4 col-xl-4 mt-md-0">
                   <Card
                     title="Average Comments"
                     data={numFormatter(currAverageComments)}
@@ -53,7 +44,7 @@ const ChartSection = ({
                   />
                 </div>
 
-              <div className="col-xl-8 mt-4">
+              <div className="col-xl-12 mt-4">
                 <GrowthChart />
               </div>
             </div>

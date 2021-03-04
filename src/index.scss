@@ -9,7 +9,7 @@
 
 body {
   font-size: 15px; 
-  background: #e9ebf6;
+  background: #ffffff;
   min-height: 100vh; 
   overflow-x: hidden; 
   font-family: 'Quicksand', sans-serif; 
@@ -72,7 +72,7 @@ input {
 
 .MainSearch__Bar {
    
-  border-radius: 20px;
+  border-radius: 8px;
   display: flex; 
   align-items: center;
   position: relative;
@@ -124,7 +124,7 @@ input {
 }
 
 .Spinner__Title {
-  color: white; 
+  color: rgb(100, 100, 100); 
   font-weight: 300;
 }
 
@@ -141,10 +141,10 @@ input {
   width: 64px;
   height: 64px;
   margin: 8px;
-  border: 8px solid #fff;
+  border: 8px solid rgb(124, 124, 124);
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
+  border-color: rgb(122, 122, 122) transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;

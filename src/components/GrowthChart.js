@@ -116,7 +116,7 @@ class GrowthChart extends React.Component {
             options={this.state.options}
             series={this.state.series}
             type='area'
-            height= '200'
+            height= '300'
           />  
         </div>          
       </div>      
