@@ -34,7 +34,7 @@ const ChartSection = ({
                   wrapperColor='#fddfdf'
                 />
               </div>
-              <div className="col-md-4 col-xl-4 mt-md-0">
+              <div className="col-md-4 col-xl-4 mt-4 mt-md-0">
                   <Card
                     title="Average Comments"
                     data={numFormatter(currAverageComments)}
