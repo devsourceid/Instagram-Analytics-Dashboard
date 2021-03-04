@@ -11,7 +11,7 @@ class GrowthChart extends React.Component {
       dropDown: 'Daily',
       options: {
         dataLabels: {
-          enabled: false,
+          enabled: true,
         },
         colors: ['#0087fe'],
         fill: {
@@ -22,14 +22,14 @@ class GrowthChart extends React.Component {
           }
         }, 
         grid: {
-          show: false, 
+          show: true, 
           padding: {
             left: 0, 
             right: 0
           }
         },
         tooltip: {
-          enabled: false
+          enabled: true
         },
         chart: {
           id: "line", 
@@ -53,7 +53,7 @@ class GrowthChart extends React.Component {
 
       series: [ 
         { // initial data is for daily growth -- [followers yesterday, follwers today]
-          name: "series-1", 
+          name: "Followers", 
           data: [this.props.user.currentStats.currFollowers - this.props.user.growth.daily, this.props.user.currentStats.currFollowers] 
         } 
       ]
@@ -67,7 +67,7 @@ class GrowthChart extends React.Component {
 
     this.setState({ 
       dropDown: textContent,
-      series: [{ name: "series-1", data: [currFollowers - growthType, currFollowers] }],
+      series: [{ name: "Followers", data: [currFollowers - growthType, currFollowers] }],
       options: {...this.state.options, xaxis: { categories: dateFormatter(textContent) }}
     })
   }
@@ -107,7 +107,7 @@ class GrowthChart extends React.Component {
 
           </div>
 
-          <p className="text-muted">Average {dropDown.toLowerCase()} growth</p> 
+          <p className="text-muted">Average {dropDown.toLowerCase()} followers growth</p> 
         
         </div>  
 
@@ -116,7 +116,7 @@ class GrowthChart extends React.Component {
             options={this.state.options}
             series={this.state.series}
             type='area'
-            height= '300'
+            height= '400'
           />  
         </div>          
       </div>      
