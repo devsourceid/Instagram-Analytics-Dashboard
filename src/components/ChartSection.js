@@ -7,8 +7,8 @@ import { numFormatter, getRateDiff } from '../helpers';
 
 const ChartSection = ({ 
   user: { basic: { isPrivate }, 
-  currentStats: { currCostPerPost, currEngagementRate, currAverageLikes, currAverageComments}, 
-  prevStats: { prevCostPerPost, prevEngagementRate, prevAverageLikes, prevAverageComments}}
+  currentStats: { currEngagementRate, currAverageLikes, currAverageComments}, 
+  prevStats: { prevEngagementRate, prevAverageLikes, prevAverageComments}}
 }) => {
   return (
     <div className="Dashboard__graphs p-3 px-sm-5 pt-sm-5 pb-sm-5 rounded-lg">

@@ -6,6 +6,7 @@ const INITIAL_STATE = {
   requestError: false
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function(state = INITIAL_STATE, action) {
   switch (action.type) {
     case PROCESS_REQUEST:
