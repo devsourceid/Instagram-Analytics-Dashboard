@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { connect } from 'react-redux'
 import Card from './Card'
 import GrowthChart from './GrowthChart'; 
-import { FaDollarSign, FaFire, FaHeart, FaComment } from 'react-icons/fa'
+import { FaFire, FaHeart, FaComment } from 'react-icons/fa'
 import { numFormatter, getRateDiff } from '../helpers'; 
 
 const ChartSection = ({ 
