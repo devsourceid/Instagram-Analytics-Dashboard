@@ -19,6 +19,7 @@ export function fetchUser (query) {
       const userResults = await axios.get(`https://igblade.com/api/v2/accounts/${query}`, {
         headers: {
           "Authorization": "Bearer tfZjyZ3nFNpB4nOAgirD5bn3NMbEdvMgWychm60VG12mKPC3b8J0OiOHYitc"
+          // OmxCZ6mHvk8WOjfekProE5BAtCBB7pC3mVZUBFvQi6J58Gqz5ofAZi7KMXvM
         }
       }); 
 
